@@ -5,7 +5,7 @@
     justify-content: space-between;
   }
   &__title {
-    color: #111;
+    color: $blacktext;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -14,8 +14,17 @@
     letter-spacing: -0.72px;
     text-transform: uppercase;
   }
+  &__descr {
+    color: $blacktext;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+  }
 }
-span {
+.span {
   color: $orange;
   text-align: center;
   font-family: Montserrat;
