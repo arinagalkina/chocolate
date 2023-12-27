@@ -1,8 +1,11 @@
 .sells {
   padding: 128px 32px;
-  @media (max-width:768px) {
+  @media (max-width:480px) {
     display: none;
   }
+
+
+    
   &__list {
     display: flex;
     justify-content: space-between;
@@ -80,11 +83,8 @@
     display: flex;
     justify-content: center;
   }
-  &__mob {
-    @media (min-width:768px) {
-      display: none;
-    }
-  }
+
+  
     &__button-mob {
       @extend %btn;
       width: 162px;
@@ -110,3 +110,10 @@
 .change {
   display: flex;
 }
+.sells__mob {
+  display: none;
+  @media (max-width:480px) {
+    display: block;
+  }
+}
+  
