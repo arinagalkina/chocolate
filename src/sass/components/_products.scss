@@ -1,7 +1,23 @@
 .products {
-  background-color: $background-page;
-  &__title {
+  background-color: $background;
+  &__img {
+    width: 230px;
+    height: 201px;
+  }
+  &__wrapper {
     color: $orange;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+  &__title {
+    text-align: center;
+    color: $blacktext;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
@@ -10,6 +26,7 @@
     letter-spacing: -0.72px;
     text-transform: uppercase;
   }
+
   &__name {
     color: $blacktext;
     font-family: Montserrat;
@@ -19,6 +36,7 @@
     line-height: 24px; /* 133.333% */
     letter-spacing: -0.36px;
     text-transform: uppercase;
+    text-align: center;
   }
   &__descr {
     color: rgba(17, 17, 17, 0.7);
@@ -28,6 +46,7 @@
     font-weight: 400;
     line-height: 14px; /* 116.667% */
     letter-spacing: -0.24px;
+    text-align: center;
   }
   &__btn {
     color: $blacktext;
@@ -44,6 +63,8 @@
     border-radius: 100px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: $background;
+    display: block;
+    justify-items: center;
   }
   &__item {
     width: 270px;
@@ -52,5 +73,8 @@
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: $background;
+  }
+  &__list {
+    display: flex;
   }
 }

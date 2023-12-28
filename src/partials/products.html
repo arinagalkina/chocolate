@@ -1,58 +1,110 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="../sass/index.scss">
-</head>
-<body>
-  <section class="products">
-    <div class="container">
-      Our <span class="products__title">pRODUCTS</span>
-      <ul class="products__list">
-        <li class="products__item">
-          <h2 class="products__name">orange</h2>
-          <p class="products__descr">Dark chocolate</p>
-          <button class="products__btn">45 UAH</button>
-        </li>
-        <li class="products__item">
-          <h2 class="products__name">APPLE&CRANBERRY</h2>
-          <p class="products__descr">Milk chocolate</p>
-          <button class="products__btn">45 UAH</button>
-        </li>
-        <li class="products__item"> 
-          <h2 class="products__name">lime&sea salt</h2>
-          <p class="products__descr">Dark chocolate</p>
-          <button class="products__btn">45 UAH</button>
-        </li>
-        <li class="products__item">
-          <h2 class="products__name">pineapple</h2>
-          <p class="products__descr">Dark chocolate</p>
-          <button class="products__btn">45 UAH</button>
-        </li>
-        <li class="products__item">
+<section class="products">
+  <div class="container">
+    <p class="products__title">
+      Our<span class="products__wrapper">products</span>
+    </p>
+    <ul class="products__list">
+      <li class="products__item">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/orange-choc1x.png 1x,
+              ./images/orange-choc2x.png 2x
+            "
+          />
+          <img
+            src="./images/orange-choc1x.png"
+            alt="products"
+            class="products__img"
+          />
+        </picture>
+        <h2 class="products__name">orange</h2>
+        <p class="products__descr">Dark chocolate</p>
+        <button class="products__btn">45 UAH</button>
+      </li>
+      <li class="products__item">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/apple&cran-choc1x.png 1x,
+            ./images/apple&cran-choc2x.png 2x
+          "
+        />
+        <img
+          src="./images/apple&cran-choc1x.png"
+          alt="products"
+          class="products__img"
+        />
+        <h2 class="products__name">APPLE&CRANBERRY</h2>
+        <p class="products__descr">Milk chocolate</p>
+        <button class="products__btn">45 UAH</button>
+      </li>
+      <li class="products__item">
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/lime$salt-choc1x.png 1x,
+            ./images/lime$salt-choc2x.png 2x
+          "
+        />
+        <img
+          src="./images/lime$salt-choc1x.png"
+          alt="products"
+          class="products__img"
+        />
+        <h2 class="products__name">lime&sea salt</h2>
+        <p class="products__descr">Dark chocolate</p>
+        <button class="products__btn">45 UAH</button>
+      </li>
+      <li class="products__item">
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/pineapple-choc1x.png 1x, ./images/pineapple-choc2x.png 2x"
+        />
+        <img
+          src="./images/pineapple-choc1x.png"
+          alt="products"
+          class="products__img"
+        />
+        <h2 class="products__name">pineapple</h2>
+        <p class="products__descr">Dark chocolate</p>
+        <button class="products__btn">45 UAH</button>
+      </li>
+      <!--  <li class="products__item">
+          <img class="products__img" src="./images/classic-choc2x.png" alt="classic-choc2x">
           <h2 class="products__name">Classic</h2>
           <p class="products__descr">Milk chocolate</p>
           <button class="products__btn">45 UAH</button>
         </li>
         <li class="products__item">
+          <img class="products__img" src="./images/honey-choc2x.png" alt="honey-choc2x">
           <h2 class="products__name">honey</h2>
           <p class="products__descr">Milk chocolate</p>
           <button class="products__btn">50 UAH</button>
         </li>
         <li class="products__item">
+          <img class="products__img" src="./images/roasted-choc2x.png" alt="roasted-choc2x">
           <h2 class="products__name">Roasted fruits</h2>
           <p class="products__descr">Dark chocolate</p>
           <button class="products__btn">66 UAH</button>
         </li>
         <li class="products__item">
+          <img class="products__img" src="./images/classic-choc2x.png" alt="classic-choc2x">
           <h2 class="products__name">Classic</h2>
           <p class="products__descr">White chocolate</p>
           <button class="products__btn">54 UAH</button>
-        </li>
-      </ul>
-  </section>
-</body>
-</html>
+        </li> -->
+    </ul>
+    <div class="elipses">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</section>
