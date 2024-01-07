@@ -1,10 +1,7 @@
 @import "./base/reset";
-
 @import "./utils/color";
 @import "./utils/general";
 @import "./utils/placeholder";
-@import './common';
-
-// @import "./componets/sells.scss";
-@import "./componets/descr";
-
+@import "./componets/header";
+@import "./componets/mobile-menu";
+@import "./componets/sells.scss";
