@@ -1,5 +1,5 @@
 %descrtext {
-  color: #111;
+  color: $blacktext;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -18,4 +18,15 @@
   background: $orange;
   border: none;
   cursor: pointer;
+}
+%title {
+  color: $blacktext;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
 }

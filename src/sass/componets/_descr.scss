@@ -1,0 +1,116 @@
+.descr {
+  padding: 128px 0;
+  &__title {
+    width: 411px;
+    margin: 0 auto;
+    @extend %title;
+    @media (max-width:480px) {
+        width: 283px;
+        font-size: 20px;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+
+  &__span {
+    color: $orange;
+  }
+  &__text {
+    @extend %descrtext;
+    width: 486px;
+    margin: 0 auto;
+    margin-top: 28px;
+    text-align: center;
+    @media (max-width:480px) {
+        width: 335px;
+    }
+  }
+  &__black-text {
+    color: $blacktext;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    margin-left: 28px;
+  }
+  &__white-text {
+    color: $white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    margin-left: 28px;
+  }
+  &__items {
+    width: 270px;
+    height: 270px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   
+    
+    @media (min-width:320px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    }
+    @media (max-width:1200px) {
+        .descr__items:nth-child(4) {
+            order: 2;
+        }
+      
+    
+  
+        .descr__items:nth-child(2) {
+            order: 3;
+        }
+      
+    
+  
+        .descr__items:nth-child(3) {
+            order: 4;
+        
+      
+    }
+
+  }
+}
+}
+
+
+
+.descr__items:nth-child(2) {
+  border-radius: 15px;
+  border: 1px solid $orange;
+  background: $white;
+}
+.descr__items:nth-child(4) {
+    border-radius: 15px;
+    border: 1px solid $orange;
+    background: $white;
+
+  }
+  .descr__items:nth-child(3) {
+    border-radius: 15px;
+    background: $background-black;
+  }
+
+ .descr__items:nth-child(1) {
+        border-radius: 15px;
+        background: $orange;
+    
+      }
+
+
+      .img__wrap {
+        padding: 28px 36px 28px 28px;
+      }
