@@ -1,0 +1,19 @@
+.explore {
+  background-image: url(../images/whisk-deskt1x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+}
