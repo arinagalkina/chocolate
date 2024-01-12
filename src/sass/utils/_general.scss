@@ -13,7 +13,6 @@
 //   }
 
 .container {
-
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -36,28 +35,25 @@
     width: 1200px;
     padding-right: 32px;
     padding-left: 32px;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
 
- 
-}
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style-type: none;
-}
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
+  img {
+    max-width: 100%;
+  }
 }
