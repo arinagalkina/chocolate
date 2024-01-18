@@ -1,0 +1,62 @@
+.modal {
+  width: 517px;
+  height: 631px;
+  border-radius: 15px;
+  background: $white;
+  padding: 40px 0 40px 0;
+  margin-left: 40px;
+  &__title {
+    color: $blacktext;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+  &__wrapper {
+    color: $orange;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+  }
+  &__button {
+    color: $white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    background: $orange;
+    border: none;
+  }
+  &__form_label {
+    display: flex;
+    padding: 22px 24px;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    border-radius: 13px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+  }
+  &__form_box input {
+    display: flex;
+    align-items: center;
+    gap: 21.78px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border: none;
+  }
+/*   resize: none; */
+}
