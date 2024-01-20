@@ -1,88 +1,135 @@
 .header {
-  padding: 24px 0 32px 0;
-  @media (max-width: 768px) {
-    padding: 29.5px 0;
+  padding: 20px 0 14px 0;
+  @media (min-width: 768px) {
+    padding: 24px 0;
   }
-  @media (max-width: 320px) {
-    padding: 20px 0 14px 0;
+  @media (min-width: 1200px) {
+    padding: 24px 0 32px;
   }
+
   &__logo--wrap {
     display: block;
   }
   &__logo {
     color: #111;
     font-family: Montserrat;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: -0.54px;
-    span {
-        font-style: italic;
+    letter-spacing: -0.42px;
+    display: flex;
+    align-items: center;
+    &--span {
+      font-style: italic;
+      margin-right: 4px;
+      font-style: italic;
+    }
+
+    svg {
+      width: 21px;
+      height: 21px;
+      margin-left: 4px;
+      @media (min-width: 1200px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 18px;
+      letter-spacing: -0.54px;
     }
   }
-  &__logo--span {
-    color: #111;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 20px; /* 111.111% */
-    letter-spacing: -0.54px;
-  } 
+
   &__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
-  &__social--media {
-    @media (max-width:768px) {
+  &__social {
+    &--link {
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+    &--media {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
+  }
+  &__nav {
+
+
+    &--link {
+      @extend %small-text;
+      color: $blacktext;
+      transition: 0.5s;
+
+      &:hover {
+        // зробити ховер до лінків
+        color: $orange;
+        &::before {
+          content: '';
+          // додати лінію підкреслення при ховері (за бажанням можна придумати щось своє)
+        }
+      }
+    }
+    &--menu {
+      display: flex;
+      color: #111;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 114.286% */
+      letter-spacing: -0.28px;
+      justify-content: space-between;
+      list-style: none;
+      gap: 24px;
+
+    }
+    @media (max-width: 1200px) {
       display: none;
     }
   }
-  &__nav--menu {
-    display: flex;
-    color: #111;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px; /* 114.286% */
-    letter-spacing: -0.28px;
-    justify-content: space-between;
-    list-style: none;
-    gap: 24px;
-    @media (max-width:768px) {
-      display: none;
-    }
+
+}
+.burger__menu {
+  height: 40px;
+  width: 40px;
+  @media (min-width: 768px) {
+    display: none;
   }
 }
-.burger__menu { 
-  height: 40px; 
-  width: 40px; 
-  @media (min-width: 768px) { 
-    display: none; 
-  } 
-} 
-
 
 .menu-toggle {
-  @media (max-width: 768px) {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  svg {
+    width: 28px;
+    height: 28px;
+    @media (min-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
   }
-
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     display: none;
   }
 }
@@ -104,8 +151,8 @@
     padding: 32px;
     background: #fff;
     z-index: 999;
-    background: #1E1823;
-    transition: transform 250ms ease-in-out;
+    background: #1e1823;
+    transition:  0.25s ease-in-out;
   }
 }
 
@@ -132,7 +179,7 @@
     color: #fff;
   }
 }
- 
+
 .mobile-menu {
   @media (max-width: 768px) {
     padding: 0;
@@ -206,5 +253,3 @@
     letter-spacing: 0.48px;
   }
 }
-
-

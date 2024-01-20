@@ -1,54 +1,60 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container">
     <div class="header__wrap">
       <div class="header__logo--wrap">
         <a class="header__logo" href="#"
           ><span class="header__logo--span">SIMPLY</span> CHOCOLATE
-          <img class="header__logo--icon" src="./images/chocolate.svg" alt="icon"
-        /></a>
+          <svg><use href="./images/icons.svg#logo"></use></svg
+        ></a>
       </div>
       <nav class="header__nav">
         <ul class="header__nav--menu">
-          <li class="header__nav--item">Home</li>
-          <li class="header__nav--item">How it’s made?</li>
-          <li class="header__nav--item">Our products</li>
-          <li class="header__nav--item">Top sellers</li>
-          <li class="header__nav--item">Chocolate is loved</li>
+          <!-- Потрібно робити посиланням -->
+          <li class="header__nav--item">
+            <a href="#header" class="header__nav--link">Home</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#" class="header__nav--link">How it’s made?</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#" class="header__nav--link">Our products</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#" class="header__nav--link">Top sellers</a>
+          </li>
+          <li class="header__nav--item">
+            <a href="#" class="header__nav--link">Chocolate is loved</a>
+          </li>
         </ul>
       </nav>
       <div class="header__social--media">
-        <a href="#"><img src="./images/instagram.svg" alt="Instagram logo" /></a>
-        <a href="#"><img src="./images/twitter.svg" alt="Twitter logo" /></a>
+        <a href="#" class="header__social--link">
+          <!-- тут використовуємо на пряму svg картинки або іконочні шрифти для того щоб потім заанімувати -->
+          <svg height="24" width="24">
+            <use href="./images/icons.svg#instagram"></use>
+          </svg>
+        </a>
+        <a href="#" class="header__social--link"
+          ><svg height="24" width="24">
+            <use href="./images/icons.svg#twitter"></use></svg
+        ></a>
       </div>
       <button class="menu-toggle js-open-menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          а
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
-            fill="black"
-          />
+        <svg width="32" height="32">
+          <use href="./images/icons.svg#burger"></use>
         </svg>
       </button>
-    
     </div>
   </div>
 </header>
-<div class="menu-container js-menu-container " >
+<div class="menu-container js-menu-container">
   <button class="menu-toggle js-close-menu">
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-      <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
+    <svg>
+      <use href="./images/icons.svg#close"></use>
     </svg>
   </button>
   <nav class="header__nav">
-    <ul class="header__nav--menu close">
+    <ul class="header__nav--menu">
       <li class="header__nav--item">Home</li>
       <li class="header__nav--item">How it’s made?</li>
       <li class="header__nav--item">Our products</li>
@@ -57,7 +63,7 @@
     </ul>
   </nav>
   <div class="header__social--media">
-    <a href="#"><img src="./images/instagram.svg" alt="Instagram logo"/></a>
+    <a href="#"><img src="./images/instagram.svg" alt="Instagram logo" /></a>
     <a href="#"><img src="./images/twitter.svg" alt="Twitter logo" /></a>
   </div>
 </div>
