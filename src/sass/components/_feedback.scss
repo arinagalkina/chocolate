@@ -39,6 +39,7 @@
     border-radius: 100px;
     background: $orange;
     border: none;
+    margin-top: 18px;
   }
   &__form_label {
     display: flex;
@@ -58,5 +59,37 @@
     align-self: stretch;
     border: none;
   }
-/*   resize: none; */
+  &__message_box textarea {
+    resize: none;
+    display: flex;
+    width: 437px !important;
+    padding: 22px 24px 93px 24px;
+    align-items: flex-start;
+    gap: 40px;
+    border: none;
+    overflow: hidden;
+  }
+  &__form_num {
+    color: $blacktext;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.36px;
+  }
+  &__close {
+    float: right;
+    margin-top: -532px;
+    margin-right: -16px;
+  }
+  &__form--wrapper::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 1px;
+    height: 31px;
+    color: black;
+    z-index: 999;
+  }
 }
