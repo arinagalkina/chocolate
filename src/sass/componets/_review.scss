@@ -1,0 +1,50 @@
+.review {
+  background: $background;
+  &__subtitle {
+    color: $blacktext;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+  }
+  &__text {
+    color: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    width: 312px;
+  }
+  &__item {
+    width: 360px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background: $white;
+    box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $blacktext;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    align-items: center;
+  }
+  &__span {
+    color: $orange;
+  }
+}
