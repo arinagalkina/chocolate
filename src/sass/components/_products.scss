@@ -98,7 +98,6 @@
   &__list {
     display: flex;
     gap: 18px;
-    overflow: hidden;
   }
   &__elipsess {
     background-color: $orange;
@@ -139,7 +138,7 @@
     @media (max-width: 320px) {
       display: none;
     }
-    }
+  }
   &__item:nth-child(4) {
     @media (max-width: 320px) {
       display: none;
@@ -148,4 +147,24 @@
       display: none;
     }
   }
+  &__slider {
+    overflow: hidden;
+  }
+}
+
+.swiper__pagination .swiper-pagination-bullet-active {
+  background-color: $orange;
+  width: 28px !important;
+  height: 13px !important;
+  border-radius: 50px !important;
+}
+.swiper-pagination-bullet {
+  width: 13px !important;
+  height: 13px !important;
+  fill: rgba(17, 17, 17, 0.1);
+}
+.swiper-pagination-horizontal {
+  justify-content: center !important;
+  display: flex;
+  margin-top: 29px;
 }
