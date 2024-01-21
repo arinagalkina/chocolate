@@ -1,0 +1,148 @@
+ul {
+    list-style-type: none;
+    white-space: nowrap;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color:$white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer__wrap {
+    background: url(../images/whisk-deskt1x.png) center/cover no-repeat;
+}
+
+
+
+.footer__wrap h2 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+
+.footer__wrap h4 {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    gap: 10px;
+   
+}
+
+
+
+
+
+
+.footer__chocolate {
+    color: #FD9222;
+    gap: 10px;
+}
+
+
+
+
+
+
+.footer__contact h2 {
+    color: #FFFFFF;
+    gap: 10px;
+}
+
+
+.footer__contact {
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    gap: 1px;
+    margin-left: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer__chocol {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1px; /* Задайте нужный отступ сверху */
+    color: #FD9222;
+}
+
+
+
+
+.footer__contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 130px; 
+    
+}
+
+
+footer {
+    background-color: $background-black;
+}
+
+i {
+    gap: 18px;
+}
+
+
+
+
+
+
+
+hr {
+    width: 1460px;
+    height: 72px;
+    top: 50px;
+    left: 1000px;
+    gap: 14px;
+    border: 1px solid #FFFFFF1A;
+    background: $blacktext;
+    gap: 10px;
+    
+}
+
+svg {
+    float: right;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+
+
+.footer__tittle {
+    margin-left: 32px;
+    margin-top: 42px;
+}
+
+
+.footer {
+    padding:50px 0px 50px 0px;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
