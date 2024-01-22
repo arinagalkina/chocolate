@@ -27,8 +27,12 @@
         slidesPerView: 1, 
         spaceBetween: 0, 
       }, 
+      500: { 
+        slidesPerView: 2, 
+        spaceBetween: 10, 
+      },
       768: { 
-        slidesPerView: 3.8, 
+        slidesPerView: 2.5, 
         spaceBetween: 16, 
       }, 
       1200: { 
