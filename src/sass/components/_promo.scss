@@ -1,0 +1,97 @@
+.promo {
+    @media (min-device-pixel-ratio: 2), 
+    (-webkit-min-device-pixel-ratio: 2), 
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) { 
+    background-image: url(../../images/promo-bg-mob2x.png); 
+  } 
+ 
+  @media screen and (min-width: 768px) { 
+    margin-top: 80px; 
+    background-image: url(../../images/promo-bg-tab1x.png); 
+ 
+    @media (min-device-pixel-ratio: 2), 
+      (-webkit-min-device-pixel-ratio: 2), 
+      (min-resolution: 192dpi), 
+      (min-resolution: 2dppx) { 
+      background-image: url(../../images/promo-bg-tab2x.png); 
+    } 
+  } 
+  @media screen and (min-width: 1200px) { 
+    background-image: url(../../images/promo-bg-desk1x.png); 
+ 
+    @media (min-device-pixel-ratio: 2), 
+      (-webkit-min-device-pixel-ratio: 2), 
+      (min-resolution: 192dpi), 
+      (min-resolution: 2dppx) { 
+      background-image: url(../../images/promo-bg-desk2x.png); 
+    } 
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 381px 0 40px 0;
+  flex-shrink: 0;
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(<path-to-image>),
+    lightgray -70.319px -105.03px / 110.32% 139.265% no-repeat;
+  &__p {
+    width: 484px;
+    height: 102px;
+    flex-shrink: 0;
+    color: $white;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 121.429% */
+    letter-spacing: -0.84px;
+    margin-left: 40px;
+  }
+  &__btn_bn {
+    border-radius: 100px;
+    background: $orange;
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    gap: 14px;
+    color: $white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+  }
+  &__btn_hm {
+    @extend %btn;
+    background: transparent;
+    color: $white;
+    width: 183px;
+    height: 45px;
+    border: 1px solid $white;
+  }
+
+  &__btns {
+    margin-left: 40px;
+    display: flex;
+    gap: 14px;
+    margin-top: 32px;
+  }
+  &__sd {
+    color: $white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.42px;
+  }
+  &__scroll_d {
+    margin-right: 40px;
+    float: right;
+  }
+}
