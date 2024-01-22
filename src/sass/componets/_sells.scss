@@ -1,17 +1,12 @@
 .sells {
-  padding: 128px 32px;
-  @media (max-width:480px) {
-    display: none;
-  }
+  // padding: 128px 0; // ці відступи дадуться іншим секція і вони в ній поставляться автоматично
 
-
-    
   &__list {
     display: flex;
     justify-content: space-between;
-    @media (max-width:768px) {
-      flex-wrap: wrap;
-      display: block;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
     }
   }
   &__title {
@@ -26,19 +21,42 @@
     text-align: center;
     margin-bottom: 50px;
   }
+
   &__descr {
-    @extend %descrtext ;
+    display: none;
+    @extend %descrtext;
+    max-width: 306px;
+    @media (min-width: 768px) {
+      display: block;
+    }
+    @media (min-width: 1200px) {
+      max-width: 407px;
+    }
+    &--mob {
+      display: block;
+      margin-bottom: 32px;
+      @media (min-width: 768px) {
+        display: none;
+        margin: 0;
+      }
+    }
   }
   &__button {
-   @extend %btn;
-   width: 162;
-   height: 50px;
+    @extend %btn;
+    width: 162;
+    height: 50px;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+    &--mob {
+      display: block;
+      margin: 0 auto;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
   }
-
-
-
-
-
 
   &__button:hover {
     border-radius: 100px;
@@ -53,24 +71,43 @@
     cursor: pointer;
   }
   &__wrap {
-    display: flex;
-    justify-content: space-between;
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
   &__items {
     border-radius: 15px;
+    &:nth-child(2) {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+    &:last-child {
+      display: none;
+
+      @media (min-width: 1200px) {
+        display: block;
+      }
+    }
   }
   &__img {
+    width: 100%;
     border-radius: 15px;
-
   }
   &__list-wrap {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 20px;
+    @media (min-width: 768px) {
+      gap: 32px;
+    }
   }
-  &__img-wrap-n {
+  &__img-wrap--mob {
     display: block;
-    @media (max-width : 1200px) {
+    @media (min-width: 768px) {
       display: none;
     }
   }
@@ -84,17 +121,15 @@
     justify-content: center;
   }
 
-  
-    &__button-mob {
-      @extend %btn;
-      width: 162px;
-      height: 50px;
-      display: block;
-      margin: 0 auto; 
-      margin-top: 20px;
-    }
+  &__button-mob {
+    @extend %btn;
+    width: 162px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
   }
-
+}
 
 .span {
   color: $orange;
@@ -107,13 +142,12 @@
   letter-spacing: -0.72px;
   text-transform: uppercase;
 }
-.change {
-  display: flex;
-}
+// .change {
+//   display: flex;
+// }
 .sells__mob {
   display: none;
-  @media (max-width:480px) {
+  @media (max-width: 480px) {
     display: block;
   }
 }
-  
