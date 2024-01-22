@@ -10,7 +10,12 @@
     }
   }
   &__img {
-    width: 100%;
+    margin: 0 auto;
+    display: block;
+    width: 224px;
+    @media (min-width: 1200px) {
+      width: 206px;
+    }
   }
 
   &__span {
@@ -18,12 +23,16 @@
   }
   &__text {
     @extend %descrtext;
-    width: 486px;
+    max-width: 100%;
     margin: 0 auto;
     margin-top: 28px;
     text-align: center;
-    @media (max-width: 480px) {
-      width: 335px;
+
+    @media (min-width: 375px) {
+      max-width: 335px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 486px;
     }
   }
   &__black-text {
@@ -67,7 +76,7 @@
     background-color: $white;
     padding: 28px;
     cursor: pointer;
-  
+
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
     position: relative;
@@ -75,22 +84,54 @@
   &__items {
     position: relative;
     cursor: pointer;
+    border-radius: 15px;
     transition: 1s ease-in-out;
-    transform-style: preserve-3d;
-
-    top: 0;
-    left: 0;
-    backface-visibility: hidden;
-      &:hover {
-        transform: rotateY(0.5turn);
-      
-  
+    width: 100%;
+    height: 270px;
+    @media (min-width: 375px) {
+      width: 335px;
     }
-    &:hover .descr__hover--item {
-  display: block;
-  position: relative;
-  top: 0;
-  left: 0;
+    @media (min-width: 1200px) {
+      width: 270px;
+    }
+    &:nth-child(1) {
+      background: $orange;
+      @media (min-width: 768px) {
+        order: 1;
+      }
+      @media (min-width: 1200px) {
+        order: 1;
+      }
+    }
+    &:nth-child(2) {
+      border: 1px solid $orange;
+      background: $white;
+      @media (min-width: 768px) {
+        order: 3;
+      }
+      @media (min-width: 1200px) {
+        order: 2;
+      }
+    }
+    &:nth-child(3) {
+      background: $background-black;
+
+      @media (min-width: 768px) {
+        order: 4;
+      }
+      @media (min-width: 1200px) {
+        order: 3;
+      }
+    }
+    &:nth-child(4) {
+      border: 1px solid $orange;
+      background: $white;
+      @media (min-width: 768px) {
+        order: 2;
+      }
+      @media (min-width: 1200px) {
+        order: 4;
+      }
     }
   }
   &__typeofchoc {
@@ -128,7 +169,7 @@
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.28px;
     text-transform: uppercase;
-    margin:0 0  21px 28px ;
+    margin: 0 0 21px 28px;
   }
   &__hover--item {
     position: relative;
@@ -137,22 +178,20 @@
     cursor: pointer;
     transition: 1s ease-in-out;
     transform-style: preserve-3d;
- 
-      transition: 1s ease-in-out;
-      -webkit-box-reflect: below 0
-        linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 
+    transition: 1s ease-in-out;
+    -webkit-box-reflect: below 0
+      linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
 
-      top: 0;
-      left: 0;
-      display: none;
+    top: 0;
+    left: 0;
+    display: none;
     &:hover {
       transform: rotateY(0.5turn);
       .descr__items {
         display: block;
       }
     }
-
   }
   &__list {
     display: flex;
@@ -164,47 +203,25 @@
       justify-content: center;
       gap: 20px;
     }
-    @media (max-width: 1200px) {
-      .descr__items:nth-child(4) {
-        order: 2;
-      }
+    // @media (max-width: 1200px) {
+    //   .descr__items:nth-child(4) {
+    //     order: 2;
+    //   }
 
-      .descr__items:nth-child(2) {
-        order: 3;
-      }
+    //   .descr__items:nth-child(2) {
+    //     order: 3;
+    //   }
 
-      .descr__items:nth-child(3) {
-        order: 4;
-      }
-    }
-    
+    //   .descr__items:nth-child(3) {
+    //     order: 4;
+    //   }
+    // }
   }
-}
-
-.descr__items:nth-child(2) {
-  border-radius: 15px;
-  border: 1px solid $orange;
-  background: $white;
-}
-.descr__items:nth-child(4) {
-  border-radius: 15px;
-  border: 1px solid $orange;
-  background: $white;
-}
-.descr__items:nth-child(3) {
-  border-radius: 15px;
-  background: $background-black;
-}
-
-.descr__items:nth-child(1) {
-  border-radius: 15px;
-  background: $orange;
 }
 
 .descr__items:hover .descr__hover--item {
   display: block;
 }
-
 
 .img__wrap {
   padding: 28px 36px 28px 28px;
