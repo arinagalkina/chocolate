@@ -13,14 +13,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 311px;
-  height: 471px;
   overflow-y: auto;
   padding: 32px 24px;
   border-radius: 15px;
   background: $white;
   @media (min-width: 768px) {
     width: 517px;
-    height: 631px;
     padding: 40px;
   }
   &__phone {

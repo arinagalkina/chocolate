@@ -1,0 +1,50 @@
+.header {
+  padding: 24px 0 32px 0;
+  @media (max-width: 768px) {
+    padding: 29.5px 0;
+  }
+  @media (max-width: 320px) {
+    padding: 20px 0 14px 0;
+  }
+  &__logo--wrap {
+    display: block;
+  }
+  &__logo {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+    span {
+        font-style: italic;
+    }
+  }
+  &__logo--span {
+    color: #111;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: -0.54px;
+  } 
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav--menu {
+    display: flex;
+    color: #111;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: -0.28px;
+    justify-content: space-between;
+    list-style: none;
+    gap: 24px;
+  }
+}

@@ -1,1 +1,1 @@
-videojs(document.querySelector(".video-js"))
+videojs(document.querySelector('.video-js'));
