@@ -5,41 +5,36 @@
 >
   <div class="modal">
     <p class="modal__title">
-      LEAVE A REVIEW ABOUT <br> <span class="modal__wrapper"> OUR CHOCOLATE</span>
+      LEAVE A REVIEW ABOUT <br />
+      <span class="modal__color"> OUR CHOCOLATE</span>
     </p>
     <form class="modal__form">
-      <label class="modal__form_label" for="name">
-        <div class="modal__form_box">
-          <input name="name" type="text" placeholder="Name" />
-        </div>
-      </label>
-      <label class="modal__form_label" for="email">
-        <div class="modal__form_box">
-          <input name="email" type="email" placeholder="Email" />
-        </div>
-      </label>
+      <input name="name" type="text" class="modal__input" placeholder="Name" />
+
+      <input name="email" type="email" class="modal__input" placeholder="Email" />
+
       <label class="modal__form_label" for="telephone">
-        <div class="modal__form--wrapper">
-          <img src="./images/ukrain_flag.svg" alt="ukrain_flag">
-          <span class="modal__form_num">
-            +380
-          </span>
+        <div class="modal__wrapper">
+          <img src="./images/ukrain_flag.svg" alt="ukrain_flag" />
+          <span class="modal__form_num"> +380 </span>
         </div>
-        <div class="modal__form_box">
-          <input name="telephone" type="telephone" placeholder="Phone number" />
-        </div>
+
+        <input
+          name="telephone"
+          class="modal__phone"
+          type="tel"
+          placeholder="Phone number"
+        />
       </label>
-      <label class="modal__form_label" for="comments">
-        <div class="modal__message_box">
-          <textarea
-            name="message"
-            id="comments"
-            placeholder="Enter text"
-          ></textarea>
-        </div>
-      </label>
+
+      <textarea
+        name="message"
+        id="comments"
+        placeholder="Enter text"
+        class="modal__textarea"
+      ></textarea>
     </form>
     <button class="modal__button">Send</button>
-    <button class="modal__close" data-close-modal>&times;</button>
+    <button class="modal__close" data-close-modal><svg><use href="./images/icons.svg#close"></use></svg></button>
   </div>
 </div>
