@@ -1,0 +1,2 @@
+new Swiper(".products__slider",{pagination:{el:".swiper__pagination",clickable:!0},grabCursor:!0,keyboard:{enabled:!0,onlyinViewport:!0},freeMode:!0,simulateTouch:!1,autoplay:{delay:2e3,stopOnLastSlide:!1,disableonInteraction:!0},speed:750,breakpoints:{320:{slidesPerView:1,spaceBetween:0},500:{slidesPerView:2,spaceBetween:10},768:{slidesPerView:2.5,spaceBetween:16},1200:{slidesPerView:4,spaceBetween:18}}});
+//# sourceMappingURL=index.81bb44fa.js.map
