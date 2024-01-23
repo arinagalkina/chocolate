@@ -1,148 +1,106 @@
-ul {
-    list-style-type: none;
-    white-space: nowrap;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    color:$white;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-}
-
-.footer__wrap {
-    background: url(../images/whisk-deskt1x.png) center/cover no-repeat;
-}
-
-
-
-.footer__wrap h2 {
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.03em;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    
-}
-
-
-.footer__wrap h4 {
-    color: #FFFFFF;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    gap: 10px;
-   
-}
-
-
-
-
-
-
-.footer__chocolate {
-    color: #FD9222;
-    gap: 10px;
-}
-
-
-
-
-
-
-.footer__contact h2 {
-    color: #FFFFFF;
-    gap: 10px;
-}
-
-
-.footer__contact {
-    color: #FFFFFF;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: center;
-    gap: 1px;
-    margin-left: 1rem;
-    margin-bottom: 10px;
-}
-
-.footer__chocol {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 1px; /* Задайте нужный отступ сверху */
-    color: #FD9222;
-}
-
-
-
-
-.footer__contact {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 130px; 
-    
-}
-
-
-footer {
-    background-color: $background-black;
-}
-
-i {
-    gap: 18px;
-}
-
-
-
-
-
-
-
-hr {
-    width: 1460px;
-    height: 72px;
-    top: 50px;
-    left: 1000px;
-    gap: 14px;
-    border: 1px solid #FFFFFF1A;
-    background: $blacktext;
-    gap: 10px;
-    
-}
-
-svg {
-    float: right;
-    margin-top: 1px;
-    margin-left: 1px;
-}
-
-
-
-.footer__tittle {
-    margin-left: 32px;
-    margin-top: 42px;
-}
-
-
 .footer {
-    padding:50px 0px 50px 0px;
-}
+  background: #1e1823;
+  padding: 32px 0;
+  @media (min-width: 768px) {
+    padding: 50px 0;
+  }
+  &__title {
+    color: $white;
 
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 116.667% */
+    letter-spacing: -0.48px;
+    &--color {
+      color: $orange;
+    }
+    @media (min-width: 768px) {
+      max-width: 300px;
+      font-size: 28px;
+      line-height: 34px; /* 121.429% */
+      letter-spacing: -0.56px;
+    }
+  }
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    &--title {
+      color: $white;
+      text-align: center;
+      margin: 0;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px; /* 128.571% */
+    }
+    &--link {
+      color: $white;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 128.571% */
+      letter-spacing: -0.28px;
+    }
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: start;
+  }
+  &__social {
+    display: flex;
+    gap: 14px;
 
-a{
-    color: white;
-    text-decoration: none;
+    &--link {
+    }
+  }
+
+  &__svg {
+    width: 22px;
+    height: 22px;
+    fill: $white;
+  }
+  &__line {
+    border-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    margin: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0;
+    @media (min-width: 768px) {
+      gap: 50px;
+    }
+  }
+  &__link {
+    color: $white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: -0.28px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 32px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      margin-top: 24px;
+      gap: 24px;
+    }
+  }
+  &__box {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }
