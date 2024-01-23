@@ -1,19 +1,19 @@
 .hero {
-  padding: 50px;
+  padding: 20px 0;
   background: $background-black;
-  @media (max-width:480px) {
-    padding: 20px;
+  @media (min-width:768px) {
+    padding: 50px 0;
   }
   &__list {
     display: flex;
-    justify-content: space-between;
-    @media (max-width:1200px) {
-        flex-wrap: wrap;
-        
+    gap: 38px;
+    flex-wrap: wrap;
+    @media (min-width:768px) {
+      justify-content: space-between;
+
     }
-    @media (max-width:768px) {
-        gap: 38px;
-    }
+
+
   }
   &__sub {
     color: $white;
@@ -32,9 +32,8 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.28px;
-    width: 308px;
-    @media (max-width:480px) {
-        width: 250px;
+    @media (min-width:768px) {
+      max-width: 308px;
     }
   }
   &__elipse {
