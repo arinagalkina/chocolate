@@ -36,7 +36,9 @@
     padding-right: 32px;
     padding-left: 32px;
   }
-  * {
+  
+}
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -56,4 +58,6 @@
   img {
     max-width: 100%;
   }
-}
+  input, textarea {
+    outline: none;
+  }
