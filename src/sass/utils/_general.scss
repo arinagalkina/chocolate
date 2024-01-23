@@ -12,20 +12,21 @@
   }
 }
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style-type: none;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
 
 .swiper__pagination .swiper-pagination-bullet-active {
@@ -49,3 +50,8 @@ ul {
     width: 28px !important;
     height: 13px !important;
     border-radius: 50px !important;}
+
+    .is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
