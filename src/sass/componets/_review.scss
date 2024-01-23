@@ -11,52 +11,45 @@
     line-height: 24px; /* 133.333% */
   }
   &__text {
-    @media (min-width: 320px) {
-      color: rgba(17, 17, 17, 0.7);
-      text-align: center;
-      font-family: Montserrat;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 18px; /* 128.571% */
-      letter-spacing: -0.28px;
-      width: 312px;
-      text-align: center;
-      align-items: center;
-      margin: 0 auto;
-    }
+    color: rgba(17, 17, 17, 0.7);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+    letter-spacing: -0.28px;
+    text-align: center;
+    align-items: center;
+    margin: 24px auto 0;
   }
   &__item {
-    @media (min-width: 320px) {
     width: 360px;
     height: 200px;
+    padding: 56px 18px 42px;
     flex-shrink: 0;
+    position: relative;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: $white;
     box-shadow: 0px 9.049px 26.572px 0px rgba(215, 228, 249, 0.25);
-                
   }
-}
   &__list {
-    @media (min-width: 320px) {
     display: flex;
     justify-content: space-between;
-  
+    align-items: center;
   }
-}
   &__title {
     @media (min-width: 320px) {
-    color: $blacktext;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 91px;
+      color: $blacktext;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: -0.72px;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 91px;
     }
   }
   &__span {
@@ -64,16 +57,23 @@
   }
   &__wrap--img {
     @media (min-width: 320px) {
-    position: relative;
-    bottom: 36px;
-    left: 133px;
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
     }
+
   }
+  
   &__slider {
+    position: relative;
     overflow: hidden;
-    height: 500px;
+    height: 275px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+}
+.swiper-pagination {
+  bottom: 0;
 }

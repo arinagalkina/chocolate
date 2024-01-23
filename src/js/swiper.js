@@ -26,7 +26,7 @@ new Swiper('.review__slider', {
         spaceBetween: 16, 
       }, 
       1200: { 
-        slidesPerView: 3.3, 
+        slidesPerView: 3, 
         spaceBetween: 28, 
       }, 
     }, 
