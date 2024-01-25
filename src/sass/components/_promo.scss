@@ -1,37 +1,42 @@
 .promo {
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/promo-bg-mob2x.png);
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-top: 80px;
-    background-image: url(../images/promo-bg-tab1x.png);
-
+  .container {
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 381px 0 40px 0;
+    background-size: 100% 100%;
+    background-image: url(../images/promo-bg-mob1x.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/promo-bg-tab2x.png);
+      background-image: url(../images/promo-bg-mob2x.png);
     }
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/promo-bg-desk1x.png);
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/promo-bg-desk2x.png);
+    @media screen and (min-width: 768px) {
+      margin-top: 80px;
+      background-image: url(../images/promo-bg-tab1x.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/promo-bg-tab2x.png);
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images/promo-bg-desk1x.png);
+
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/promo-bg-desk2x.png);
+      }
     }
   }
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 381px 0 40px 0;
   @media (max-width: 768px) {
     padding: 671px 0 40px 0;
     width: 95%;
@@ -71,7 +76,7 @@
     font-weight: 600;
     line-height: normal;
     border: none;
-    @media (max-width: 480px) { 
+    @media (max-width: 480px) {
       padding: 12px 28px;
     }
   }
@@ -112,8 +117,8 @@
   }
   &__scroll_d {
     float: right;
-    @media (min-width: 320px) {
-      margin-right: 208px;
+    @media (min-width: 320px) { 
+      margin-right: 40px;
     }
   }
 }
