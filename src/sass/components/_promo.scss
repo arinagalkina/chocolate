@@ -60,9 +60,10 @@
     margin-left: 40px;
     letter-spacing: -0.84px;
     @media (max-width: 480px) {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.6px;
+      margin-left: 20px;
     }
   }
   &__btn_bn {
@@ -81,6 +82,7 @@
     border: none;
     @media (max-width: 480px) {
       padding: 12px 28px;
+      white-space: nowrap;
     }
   }
   &__btn_hm {
@@ -94,7 +96,7 @@
       display: flex;
       white-space: nowrap;
       justify-content: center;
-      width: 159px;
+      width: 140px;
       height: 41px;
       padding: 12px 28px;
       font-size: 14px;
@@ -106,6 +108,9 @@
     gap: 14px;
     margin-top: 32px;
     margin-left: 40px;
+    @media (max-width: 480px) {
+      margin-left: 20px;
+    }
   }
   &__sd {
     color: $white;
