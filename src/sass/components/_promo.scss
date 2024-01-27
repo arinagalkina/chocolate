@@ -1,11 +1,14 @@
 .promo {
+  @media (min-width: 320px) {
+    margin: 0 auto;
+    padding: 395px 16px 21px 20px;
+  }
   .container {
+    padding: 381px 0 40px 0;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 15px;
     overflow: hidden;
-    margin: 0 auto;
-    padding: 381px 0 40px 0;
     background-size: 100% 100%;
     background-image: url(../images/promo-bg-mob1x.png);
     @media (min-device-pixel-ratio: 2),
@@ -89,9 +92,12 @@
     border: 1px solid $white;
     @media (max-width: 480px) {
       display: flex;
+      white-space: nowrap;
+      justify-content: center;
       width: 159px;
       height: 41px;
       padding: 12px 28px;
+      font-size: 14px;
     }
   }
 
@@ -117,8 +123,28 @@
   }
   &__scroll_d {
     float: right;
-    @media (min-width: 320px) { 
-      margin-right: 40px;
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+    gap: 14px;
+    justify-content: center;
+    @media (max-width: 480px) {
+      float: left;
+      margin-left: 20px;
+      margin-top: 32px;
+    }
+  }
+  &__btn {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    border: none;
+    fill: $white;
+    cursor: pointer;
+    @media (max-width: 480px) {
+      width: 28px;
+      height: 28px;
     }
   }
 }
