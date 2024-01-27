@@ -5,6 +5,8 @@
   right: 0;
   bottom: 0;
   backdrop-filter: blur(3px);
+  transition: 0.5s;
+z-index: 100;
 }
 
 .modal {
