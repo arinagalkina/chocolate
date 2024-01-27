@@ -5,6 +5,8 @@
   right: 0;
   bottom: 0;
   backdrop-filter: blur(3px);
+  z-index: 1000;
+  transition: 0.5s;
 }
 
 .modal {
@@ -17,8 +19,27 @@
   padding: 32px 24px;
   border-radius: 15px;
   background: $white;
-  padding: 40px 0 40px 0;
-  justify-content: center;
+  @media (min-width: 768px) {
+    width: 517px;
+    padding: 40px;
+  }
+  &__phone {
+    border: none;
+    color: rgba(64, 64, 64, 0.3);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    width: 100%;
+    line-height: normal;
+    letter-spacing: -0.28px;
+    margin-left: 14px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+
+      letter-spacing: -0.36px;
+    }
+  }
   &__title {
     color: $blacktext;
 
