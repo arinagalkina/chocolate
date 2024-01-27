@@ -1,7 +1,17 @@
+
+
 @import "./base/reset";
+@import "./utils/color";
+@import "./utils/general";
+@import "./utils/placeholder";
 
-@import './utils/color';
-@import './utils/general';
 
+@import "./components/header";
+@import "./components/hero";
+@import './components/exp';
+@import './components/products';
+@import './components/sells';
 @import './componets/footer';
 
+@import "./components/review";
+@import './components/feedback';
