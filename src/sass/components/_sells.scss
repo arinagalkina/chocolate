@@ -1,61 +1,41 @@
 .sells {
-  // padding: 128px 0; // ці відступи дадуться іншим секція і вони в ній поставляться автоматично
-
-  &__list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    @media (max-width: 768px) {
-    }
+  padding: 72px 0;
+  @media (min-width: 768px) {
+    padding: 100px 0;
   }
+  @media (min-width: 768px) {
+    padding: 128px 0;
+  }
+
   &__title {
     color: $blacktext;
     font-family: Montserrat;
-    font-size: 24px;
+    text-align: center;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.72px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 50px;
-  }
+    @media (min-width: 768px) {
+      font-size: 24px;
 
+      line-height: 28px;
+      letter-spacing: -0.72px;
+    }
+  }
   &__descr {
-    display: none;
     @extend %descrtext;
     max-width: 306px;
-    @media (min-width: 768px) {
-      display: block;
-    }
     @media (min-width: 1200px) {
       max-width: 407px;
-    }
-    &--mob {
-      display: block;
-      margin-bottom: 32px;
-      @media (min-width: 768px) {
-        display: none;
-        margin: 0;
-      }
     }
   }
   &__button {
     @extend %btn;
     width: 162;
     height: 50px;
-    display: none;
-    @media (min-width: 768px) {
-      display: block;
-    }
-    &--mob {
-      display: block;
-      margin: 0 auto;
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
   }
 
   &__button:hover {
@@ -71,23 +51,27 @@
     cursor: pointer;
   }
   &__wrap {
-    display: none;
-    @media (min-width: 768px) {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-  &__items {
-    border-radius: 15px;
-    &:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    &--desk {
       display: none;
       @media (min-width: 768px) {
         display: block;
       }
     }
-    &:last-child {
+    &--mob {
+      display: flex;
+      justify-content: center;
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  &__items {
+    border-radius: 15px;
+    &:nth-child(3) {
       display: none;
-
       @media (min-width: 1200px) {
         display: block;
       }
@@ -95,24 +79,40 @@
   }
   &__img {
     border-radius: 15px;
-  }
-  &__list-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 100%;
+    @media (min-width: 375px) {
+      width: 335px;
+    }
     @media (min-width: 768px) {
-      gap: 32px;
+      width: 344px;
+    }
+    @media (min-width: 1200px) {
+      width: 368px;
     }
   }
-  &__img-wrap--mob {
-    display: block;
+  picture {
+    width: 100%;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
     @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+  &__img-wrap-n {
+    display: block;
+    @media (max-width: 1200px) {
       display: none;
     }
   }
   &__descr-mob {
     @extend %descrtext;
-    margin: 20px 29px 32px 0;
+    margin-top: 20px;
+    max-width: 306px;
   }
   &__list-mob {
     flex-wrap: wrap;
@@ -141,12 +141,13 @@
   letter-spacing: -0.72px;
   text-transform: uppercase;
 }
-// .change {
-//   display: flex;
-// }
-.sells__mob {
-  display: none;
-  @media (max-width: 480px) {
-    display: block;
+.change {
+  display: flex;
+}
+.sells__list--mob {
+  padding: 72px 0;
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
   }
 }
