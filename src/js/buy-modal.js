@@ -1,9 +1,11 @@
+
+
 window.addEventListener('DOMContentLoaded', () => {
 
     const refs = {
-      openModalBtn: document.querySelector('[data-open-review]'),
-      closeModalBtn: document.querySelector('[data-close-review]'),
-      modal: document.querySelector('[data-backdrop-review]'),
+      openModalBtn: document.querySelectorAll('[data-open-buy]'),
+      closeModalBtn: document.querySelector('[data-close-buy]'),
+      modal: document.querySelector('[data-backdrop-buy]'),
     };
   
     refs.closeModalBtn.addEventListener('click', closeModal);
@@ -14,12 +16,13 @@ window.addEventListener('DOMContentLoaded', () => {
       refs.modal.classList.remove('animate__zoomOut');
     }
     function closeModal() {
-      refs.modal.classList.toggle('is-hidden');
+      refs.modal.classList.add('is-hidden');
       refs.modal.classList.remove('animate__zoomIn');
       refs.modal.classList.add('animate__zoomOut');
     }
   
-    refs.openModalBtn.addEventListener('click', openModal);
+    refs.openModalBtn.forEach(btn => btn.addEventListener('click', openModal));
+  
   
   });
   
