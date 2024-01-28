@@ -8,7 +8,7 @@
   letter-spacing: -0.28px;
 }
 %btn {
-  color: #fff;
+  color: $white;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -18,6 +18,13 @@
   background: $orange;
   border: none;
   cursor: pointer;
+}
+%small-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
 }
 %title {
   color: $blacktext;
