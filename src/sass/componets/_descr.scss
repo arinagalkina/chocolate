@@ -46,8 +46,10 @@
     text-transform: uppercase;
     margin-left: 28px;
   }
+  &__typeofchoc:nth-child(4) {
+    width: 98px;
 
-
+  }
   &__hover--list {
     background-color: rgb(198, 175, 175);
   }
@@ -109,6 +111,7 @@
         order: 4;
       }
     }
+
   }
   &__hover {
     position: absolute;
@@ -143,7 +146,7 @@
     }
   }
   &__typeofchoc {
-    color: #fff;
+    color: $white;
     font-family: Montserrat;
     font-size: 10px;
     font-style: normal;
