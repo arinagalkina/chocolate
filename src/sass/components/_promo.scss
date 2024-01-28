@@ -1,5 +1,3 @@
-
-
 .promo {
   .container {
     max-width: 90%;
@@ -17,6 +15,7 @@
     }
 
     @media (min-width: 768px) {
+      max-width: 704px;
       background-image: url(../images/promo-bg-tab1x.png);
 
       @media (min-device-pixel-ratio: 2),
@@ -29,7 +28,7 @@
 
     @media (min-width: 1200px) {
       background-image: url(../images/promo-bg-desk1x.png);
-
+      max-width: 1136px;
       @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
