@@ -97,20 +97,23 @@
     margin-top: 8px;
     padding: 22px;
     border-radius: 13px;
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       display: flex;
       width: 263px;
     }
   }
-
+  &__telephone {
+    @media (max-width: 767px) {
+      height: 66px;
+    }
+  }
   &__email {
     width: 513px;
     padding: 22px 24px;
     height: 66px;
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
-    @media (max-width: 480px) {
-
+    @media (max-width: 767px) {
       width: 263px;
     }
   }
@@ -125,7 +128,7 @@
     display: flex;
     gap: 21px;
     border-radius: 13px;
-    @media (max-width: 480px) {
+    @media (max-width: 767px) {
       display: flex;
       flex-direction: column;
     }
@@ -146,8 +149,7 @@
     width: 513px;
     height: 66px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
-    @media (max-width: 480px) {
-
+    @media (max-width: 767px) {
       width: 263px;
     }
   }
@@ -156,8 +158,7 @@
     width: 513px;
     height: 137px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
-    @media (max-width: 480px) {
-
+    @media (max-width: 767px) {
       width: 263px;
     }
   }
@@ -186,7 +187,7 @@
 }
 
 .hidden {
-  @media (min-width:768px) {
+  @media (min-width: 767px) {
     display: block;
   }
   display: none;
