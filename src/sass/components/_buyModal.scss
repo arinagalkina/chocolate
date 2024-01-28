@@ -105,6 +105,7 @@
   &__telephone {
     @media (max-width: 767px) {
       height: 66px;
+      align-items: center;
     }
   }
   &__email {
