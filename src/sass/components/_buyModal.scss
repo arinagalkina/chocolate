@@ -4,10 +4,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 609px;
-  height: 1058px;
+  height: 80vh;
+
   border-radius: 15px;
   background: $whiteish;
   padding: 48px;
+  overflow: auto;
+  @media (min-width: 320px) {
+    width: 311px;
+
+  }
+  @media (min-width: 640px) {
+   width: 609px;
+
+  }
+  @media (min-width: 1200px) {
+    width: 609px;
+  }
   &__item {
     display: flex;
     width: 160px;
@@ -21,8 +34,8 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: $white;
     &:hover {
-        background: $orange;
-        transition: 0.6s;
+      background: $orange;
+      transition: 0.6s;
     }
   }
   &__list {
@@ -85,6 +98,11 @@
     margin-top: 8px;
     padding: 22px;
     border-radius: 13px;
+    &__width {
+      @media (max-width:480px) {
+        width: 263px;
+      }
+   
   }
 
   &__email {
@@ -99,11 +117,17 @@
     height: 66px;
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
+   
   }
+ 
+  
   &__form--box {
     display: flex;
     gap: 21px;
     border-radius: 13px;
+    @media (max-width:768px) {
+      flex-direction: column;
+    }
   }
   &__tel--box {
     width: 513px;
@@ -136,15 +160,34 @@
   &__span {
     @extend %title;
     color: $orange;
+  
   }
 }
-.backdrop {
-  background: rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 99900;
+}
+
+// .backdrop {
+//   background: rgba(0, 0, 0, 0.2);
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 99900;
+//   transition: 0.5s;
+// }
+.buyModal::-webkit-scrollbar {
+  width: 16px;
+}
+
+.buyModal::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.buyModal::-webkit-scrollbar-thumb {
+  background-color: $orange;
+  border-radius: 100px;
+}
+.hidden {
   display: none;
 }
