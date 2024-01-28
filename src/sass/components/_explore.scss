@@ -1,0 +1,109 @@
+.explore {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../images/whisk-mob1x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  padding: 72px 0 72px 0;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/whisk-mob2x.png);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/whisk-tab1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(../images/whisk-tab2x.png);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/whisk-deskt1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        ),
+        url(../images/whisk-deskt2x.png);
+    }
+  }
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  &__descr {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.28px;
+    margin-bottom: 24px;
+    max-width: 326px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      max-width: 467px;
+    }
+  }
+  &__btn {
+    display: flex;
+    padding: 12px 28px;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    background: #fd9222;
+    margin: 0 auto;
+    border-style: none;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 24px;
+    line-height: normal;
+
+  }
+}
