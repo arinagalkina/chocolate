@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             openThanksModal('[ data-backdrop-review]');        
             openThanksModal('[data-backdrop-buy]');
-            // openThanksModal('[data-backdrop-subscribe]');
+            openThanksModal('[data-backdrop-subscribe]');
         }
       )
     );
