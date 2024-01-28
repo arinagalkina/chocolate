@@ -1,5 +1,5 @@
 %descrtext {
-  color: #111;
+  color: $blacktext;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -8,7 +8,7 @@
   letter-spacing: -0.28px;
 }
 %btn {
-  color: #fff;
+  color: $white;
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
@@ -19,8 +19,15 @@
   border: none;
   cursor: pointer;
 }
+%small-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
+}
 %title {
-
+  color: $blacktext;
   text-align: center;
   font-family: Montserrat;
   font-size: 24px;
@@ -29,4 +36,12 @@
   line-height: 28px; /* 116.667% */
   letter-spacing: -0.72px;
   text-transform: uppercase;
+}
+
+%small-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: -0.28px;
 }
