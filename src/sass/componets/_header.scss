@@ -10,18 +10,25 @@
   &__logo--wrap {
     display: block;
   }
-  &__logo--span {
-    color: #111;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 700;
-    line-height: 20px; /* 111.111% */
-    letter-spacing: -0.54px;
+  &__linkb {
+    color: $white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: -0.28px;
+    &:hover {
+      color: $orange;
+    }
   }
   &__wrap {
     display: flex;
     justify-content: space-between;
+  }
+  &__nav--list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
   &__nav--menu {
     display: flex;
@@ -128,16 +135,21 @@
     display: none;
   }
 }
-
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+.menu__social--media {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: 18px;
+  align-self: self-start;
+}
+.menu__social--link {
+  fill: $white;
+  &:hover {
+    fill: $orange;
+  }
+}
+.menu-toggle {
+  height: 28px;
+  width: 28px;
 
-  margin: 0;
-  padding: 0;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -167,8 +179,8 @@
   @media (max-width: 1200px) {
     position: fixed;
     top: 0;
-    left: -100%;
-    width: 100vw;
+    right: -100%;
+    width: 50%;
     height: 100vh;
     padding: 32px;
     background: #fff;
@@ -180,10 +192,13 @@
 
 .menu-container.is-open {
   @media (max-width: 1200px) {
-    left: 0;
+    padding: 136px 50px 20px 46px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    display: flex;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -194,6 +209,10 @@
 }
 
 .menu-container .menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
   @media (max-width: 768px) {
     position: absolute;
     top: 10px;
@@ -328,5 +347,5 @@
 }
 
 .is-open {
-  left: 0;
+  right: 0;
 }

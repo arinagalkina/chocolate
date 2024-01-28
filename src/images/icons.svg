@@ -45,7 +45,8 @@
 
         <!-- close -->
         <symbol id='close' viewBox="0 0 32 32">
-            <path d="M22.6667 9.33325L9.33334 22.6666M9.33334 9.33325L22.6667 22.6666" stroke='#fff'  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M22.6667 9.33325L9.33334 22.6666M9.33334 9.33325L22.6667 22.6666" stroke='#fff'
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         </symbol>
 
 
