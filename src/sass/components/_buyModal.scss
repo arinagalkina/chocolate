@@ -5,18 +5,17 @@
   transform: translate(-50%, -50%);
   width: 609px;
   height: 80vh;
-  
+
   border-radius: 15px;
   background: $whiteish;
   padding: 48px;
   overflow: auto;
   @media (min-width: 320px) {
     width: 311px;
-
+    padding: 32px 24px 32px 24px;
   }
   @media (min-width: 640px) {
-   width: 609px;
-
+    width: 609px;
   }
   @media (min-width: 1200px) {
     width: 609px;
@@ -34,8 +33,8 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     background: $white;
     &:hover {
-        background: $orange;
-        transition: 0.6s;
+      background: $orange;
+      transition: 0.6s;
     }
   }
   &__list {
@@ -98,6 +97,10 @@
     margin-top: 8px;
     padding: 22px;
     border-radius: 13px;
+    @media (max-width: 480px) {
+      display: flex;
+      width: 263px;
+    }
   }
 
   &__email {
@@ -106,6 +109,10 @@
     height: 66px;
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
+    @media (max-width: 480px) {
+
+      width: 263px;
+    }
   }
   &__name {
     width: 246px;
@@ -113,10 +120,15 @@
     border-radius: 13px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
   }
+
   &__form--box {
     display: flex;
     gap: 21px;
     border-radius: 13px;
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__tel--box {
     width: 513px;
@@ -134,12 +146,20 @@
     width: 513px;
     height: 66px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
+    @media (max-width: 480px) {
+
+      width: 263px;
+    }
   }
 
   &__comment {
     width: 513px;
     height: 137px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
+    @media (max-width: 480px) {
+
+      width: 263px;
+    }
   }
 
   &__title {
@@ -164,6 +184,10 @@
   background-color: $orange;
   border-radius: 100px;
 }
+
 .hidden {
+  @media (min-width:768px) {
+    display: block;
+  }
   display: none;
 }
