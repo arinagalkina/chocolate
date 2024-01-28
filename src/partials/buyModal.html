@@ -1,10 +1,12 @@
-<div class="backdrop  is-hidden animate__animated " data-backdrop-buy>
+<div class="backdrop is-hidden animate__animated" data-backdrop-buy>
   <div class="buyModal">
-    <button class="modal__close" data-close-buy><svg><use href="./images/icons.svg#close"></use></svg></button>
+    <button class="modal__close" data-close-buy>
+      <svg><use href="./images/icons.svg#close"></use></svg>
+    </button>
 
     <h2 class="buyModal__title"><span class="buyModal__span">bUY</span> nOW</h2>
-    <ul class="buyModal__list ">
-      <li class="buyModal__item ">
+    <ul class="buyModal__list">
+      <li class="buyModal__item">
         <img src="./images/modal-choc.png" alt="chocolate" /><button
           class="buyModal__btn--cards"
         >
@@ -27,66 +29,78 @@
       </li>
     </ul>
 
-   <div class="buyModal__formWrapping">
-    <form class="buyModal__form">
-        <label class="buyModal__expl--text">Personal information</label>
+    <div class="buyModal__formWrapping">
+      <form class="buyModal__form" >
+        <label class="buyModal__expl--text" for="name">Personal information</label>
         <div class="buyModal__form--box">
           <input
             class="buyModal__input buyModal__name"
             type="text"
             placeholder="Name"
+            required
+            id="name"
           />
           <input
             class="buyModal__input buyModal__name"
             type="text"
             placeholder="Surname"
+            required
+            id="name"
           />
         </div>
-        <label class="buyModal__expl--text">Email</label>
+        <label class="buyModal__expl--text" for="email">Email</label>
         <div class="form_box">
           <input
             class="buyModal__input buyModal__email"
             type="email"
+            required
+            id="email"
             placeholder="Enter your email"
           />
         </div>
-        <label class="buyModal__expl--text"
+        <label class="buyModal__expl--text" for="number"
           >Phone number
-  
+
           <div class="modal__form_label buyModal__telephone" for="telephone">
             <div class="modal__wrapper">
               <img src="./images/ukrain_flag.svg" alt="ukrain_flag" />
               <span class="modal__form_num"> +380 </span>
             </div>
-    
+
             <input
               name="telephone"
               class="modal__phone"
               type="tel"
               placeholder="Phone number"
+              required
+              id="number"
             />
           </div>
         </label>
-  
-        <label class="buyModal__expl--text">Card number</label>
+
+        <label class="buyModal__expl--text" for="card">Card number</label>
         <div class="form_box">
           <input
+            required
             class="buyModal__input buyModal__card"
             type="card"
             placeholder="Enter card"
+            id="card"
           />
         </div>
-        <label class="buyModal__expl-text">Comment</label>
+        <label class="buyModal__expl-text" for="comment">Comment</label>
         <div class="form_box">
           <input
+            required
             class="buyModal__input buyModal__comment"
             type="text"
             placeholder="Enter text"
+            id="comment"
           />
         </div>
-  
+
         <button class="buyModal__btn" data-open-thanks>Submit</button>
       </form>
-   </div>
+    </div>
   </div>
 </div>
