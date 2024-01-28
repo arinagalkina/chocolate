@@ -1,9 +1,7 @@
-
-
-@import "./base/reset";
-@import "./utils/color";
-@import "./utils/general";
-@import "./utils/placeholder";
+@import './base/reset';
+@import './utils/color';
+@import './utils/general';
+@import './utils/placeholder';
 
 
 @import "./components/header";
@@ -18,6 +16,6 @@
 @import './components/feedback';
 @import './components/promo';
 @import './components/products';
-
+@import './components/buyModal';
 
 @import './components/thankyou';
