@@ -1,28 +1,41 @@
-(() => {
-    const mobileMenu = document.querySelector('.js-menu-container');
-    const openMenuBtn = document.querySelector('.js-open-menu');
-    const closeMenuBtn = document.querySelector('.js-close-menu');
-  
-    const toggleMenu = () => {
-      const isMenuOpen =
-        openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-      mobileMenu.classList.toggle('is-open');
-  
-      const scrollLockMethod = !isMenuOpen
-        ? 'disableBodyScroll'
-        : 'enableBodyScroll';
-      bodyScrollLock[scrollLockMethod](document.body);
-    };
-  
-    openMenuBtn.addEventListener('click', toggleMenu);
-    closeMenuBtn.addEventListener('click', toggleMenu);
-  
-    // Close the mobile menu on wider screens if the device orientation changes
-    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-      if (!e.matches) return;
-      mobileMenu.classList.remove('is-open');
-      openMenuBtn.setAttribute('aria-expanded', false);
-      bodyScrollLock.enableBodyScroll(document.body);
-    });
-  })();
+window.addEventListener('DOMContentLoaded', () => {
+  const thanksRefs = {
+    openModalBtn: document.querySelectorAll('[data-open-thanks]'),
+    closeModalBtn: document.querySelector('[data-close-thanks]'),
+    modal: document.querySelector('[data-backdrop-thanks]'),
+  };
+
+
+  function openThanksModal(backdrop) {
+    const modal = document.querySelector(backdrop);
+    modal.classList.add('is-hidden');
+    modal.classList.remove('animate__zoomIn');
+    thanksRefs.modal.classList.remove('is-hidden');
+    thanksRefs.modal.classList.add('animate__fadeInRight');
+    thanksRefs.modal.classList.remove('animate__zoomOut');
+  }
+
+  function closeThanksModal() {
+    thanksRefs.modal.classList.add('is-hidden');
+    thanksRefs.modal.classList.remove('animate__fadeInRight');
+    thanksRefs.modal.classList.add('animate__zoomOut');
+  }
+
+
+
+
+  thanksRefs.openModalBtn.forEach(btn =>
+    btn.addEventListener(
+      'click', (event) => {
+          event.preventDefault();
+          openThanksModal('[ data-backdrop-review]');        
+          // openThanksModal('[data-backdrop-loved]');
+          // openThanksModal('[data-backdrop-subscribe]');
+      }
+    )
+  );
+
+
+
+  thanksRefs.closeModalBtn.addEventListener('click', closeThanksModal);
+});
