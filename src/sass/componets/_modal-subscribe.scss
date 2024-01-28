@@ -8,9 +8,12 @@
   transform: translate(-50%, -50%);
   width: 538px;
   height: 412px;
-  // background: url(../images/subscribe_bg-modal-1x-desktop.png);
-  &__imgWrap {
+  @media (max-width: 768px) {
+    width: 311px;
+    height: 350px;
   }
+  // background: url(../images/subscribe_bg-modal-1x-desktop.png);
+
   &__info {
     background-color: white;
   }
@@ -51,6 +54,9 @@
     gap: 40px;
     border-radius: 30px;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
+    @media (max-width:768px) {
+      width: 200px;
+    }
   }
   &____btn {
     display: flex;
@@ -101,5 +107,4 @@
 .info__wrap {
   display: flex;
   gap: 8px;
-
 }
